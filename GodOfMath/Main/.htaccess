@@ -1,0 +1,18 @@
+RewriteEngine on
+
+#Alt domain harici kullan
+
+
+
+#Seo url oluşturma
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+#404 hata sayfası yönlendirme kodu
+#ErrorDocument 404 http://localhost/photobio/Main/404.php
+
+RewriteRule ^/([0-9a-zA-Z-_]+)  Home.php?sef=$1 [L,QSA]
+RewriteRule ^home([0-9a-zA-Z-_]+)  home.php?sef=$1 [L,QSA]
+
+RewriteRule ^ogrenci-detay([0-9a-zA-Z-_]+)-([0-9]+)$ ogrenci-detay.php?sef=$1&kr_ogrenci_id=$2 [L,QSA]
