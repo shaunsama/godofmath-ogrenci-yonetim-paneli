@@ -25,5 +25,3 @@ Giriş Bilgileri:
 E-posta: admin@gmail.com
 
 Şifre: admin
-
-Not:Bu proje, matematik öğretmenim için yaptığım bir web tabanlı projedir.
